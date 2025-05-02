@@ -1,6 +1,6 @@
 # 🧙‍♂️ SmartNPC: AI-Powered Conversational NPCs for Games
 
-**SmartNPC** brings your game characters to life with immersive voice-based conversations, unique personalities, and seamless real-time interaction — powered locally by TinyLLaMA and voiced through ElevenLabs.
+**SmartNPC** brings your game characters to life with immersive voice-based conversations, unique personalities, and seamless real-time interaction — powered by Groq and voiced through ElevenLabs.
 
 <div align="center">
   <img src="https://i.imgur.com/d5RH7lU.png" alt="Elandor" height="180"/>
@@ -12,7 +12,11 @@
 
 ## 🚀 Live Demo Preview
 
-Watch our 2-minute cinematic walkthrough where a player escapes danger and seeks help from Elandor, Thrag, and Lyra in a fully dynamic setting. *(Link to be added)*
+Watch our 2-minute cinematic walkthrough where a player escapes danger and seeks help from Elandor, Thrag, and Lyra in a fully dynamic setting.
+
+https://github.com/user-attachments/assets/38d2177b-6a72-4004-a6ef-9f56e5c1522c
+
+
 
 ---
 
@@ -24,7 +28,7 @@ Each character has a defined role, backstory, and tone — responses feel natura
 ✅ **Real-Time Voice Output**  
 Using the official ElevenLabs SDK, NPC replies are instantly spoken aloud with expressive voice synthesis.  
 
-✅ **Local LLM Backend**  
+✅ **LLM Backend**  
 Powered by `llama3-8b-8192` running via `Groq`, with fast, cloud based inference.  
 
 ✅ **Dynamic NPC Switching**  
@@ -56,23 +60,21 @@ Characters respond based on `location`, `time_of_day`, and recent `player_action
 | Backend       | Python, groq, ElevenLabs SDK               |
 | Model         | llama3-8b-8192                             |
 | Voice         | ElevenLabs API (custom voices supported)   |
-| Local Infere- | CPU/GPU supported                          |
-| nce           |                                            | 
+| Inference     | CPU/GPU supported                          |
 ---
 
 ## 📁 Project Structure
-
-SmartNPC/
-│
-├── app.py
-├── model_engine.py
-├── game_state.py
-├── npc_data.py
-├── prompt_builder.py
-├── styles.css
-│ 
-└── README.md
-
+<pre> ``` 
+  SmartNPC/ 
+  │
+  ├── app.py # Main Streamlit app with UI and logic
+  ├── model_engine.py # Loads and runs the TinyLLaMA model
+  ├── game_state.py # Manages player and game state
+  ├── npc_data.py # Stores NPC details and voice mappings
+  ├── prompt_builder.py # Builds prompts dynamically for each interaction
+  ├── styles.css # Custom cinematic CSS for 'Wizard Tower' theme
+  │ └── README.md # Project overview and documentation
+  ``` </pre>
 
 ---
 
@@ -82,7 +84,6 @@ SmartNPC/
 ```bash
 git clone https://github.com/SwarnimShekhar/SmartNPC.git
 cd SmartNPC
-pip install -r requirements.txt
 ```
 ### 2. Add Your ElevenLabs Key
 Create a .env file:
