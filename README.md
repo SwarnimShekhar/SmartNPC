@@ -12,7 +12,7 @@
 
 ## 🚀 Live Demo Preview
 
-Watch 5-minute cinematic walkthrough where a player communicate with Elandor, Thrag, and Lyra in a fully dynamic setting.
+Watch 5-minute cinematic walkthrough where a player communicate with Elandor, Thrag, and Lyra in a fully dynamic setting (Use earphones or speakers for better audio experience).
 
 https://github.com/user-attachments/assets/38d2177b-6a72-4004-a6ef-9f56e5c1522c
 
